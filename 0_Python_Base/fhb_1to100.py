@@ -1,29 +1,21 @@
-#直接写
+#  1.直接写
 n = 1
 sum = 0
 while(n < 101):
-
     sum += n
-
     print(n)
-
     n = n + 1   
 print(sum)
 
-
-#数组
-
+#  2.数组
 list1 = list(range(101))
 sum = 0
 for i in list1:
-
     print(i)
-
     sum += i;
 print(sum)
 
-#列表
-
+#   3.列表
 def sum(x):
     print(x)
     if x == 1:
@@ -32,8 +24,7 @@ def sum(x):
         return sum(x - 1) + x
 print(sum(100))
 
-#类
-
+#   4.类
 class s(object):
     def __init__(self, num):
         self.num = num
