@@ -11,8 +11,8 @@ https://github.com/haoel/leetcode
 目前有三位成员，那么每一个叶文件下就有三分。
 
   
-| 题目     |    分类 | 解答  |
-| :-------- | --------:| :--: |
+| 题目     |    难度 |    分类 | 解答  |
+| :-------- | --------:| --------:| :--: |
 | [4.Median of Two Sorted Arrays  ](https://leetcode.com/problems/median-of-two-sorted-arrays/)  |  |  [C++ / python](https://github.com/gou7ma7/leetcode/tree/master/4.%20Hard%20Median%20of%20Two%20Sorted%20Arrays)  |
 |     |    |    |
 |       |     |   |
