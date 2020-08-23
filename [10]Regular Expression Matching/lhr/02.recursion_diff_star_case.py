@@ -9,7 +9,6 @@ class Solution:
                 return s_index == s_len
 
             now_match = (s_index < s_len and p[p_index] in {s[s_index], '.'})
-
             if p_index < p_len - 1 and p[p_index + 1] == '*':  # p还剩2个以上字符，同时当前匹配的第二个字符为*，情况特殊单独讨论
                 return is_match(s_index, p_index + 2) or (now_match and is_match(s_index + 1, p_index))  # * 对应两种情况
 
@@ -20,6 +19,7 @@ class Solution:
 
 # leetcode submit region end(Prohibit modification and deletion)
 if __name__ == '__main__':
+    print(Solution().isMatch('aaaaaaaaaaaaab', 'a*a*a*a*a*a*a*a*a*a*c'))
     print(Solution().isMatch('mississippi', 'mis*is*ip*.'))
     print(Solution().isMatch('aa', 'a*'))
     print(Solution().isMatch('aa', 'a'))
