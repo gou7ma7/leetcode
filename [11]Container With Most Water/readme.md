@@ -7,3 +7,11 @@
 2. 从两头往中间走，即y1= height[0], y2 = height[-1], ∆x= len(height);
 3. 走的方式为判断y1,y2 若小的值往中间靠，同时维护一个max_area;
 4. 假设最大值的情况y1',y2',∆x', 按照3的遍历方式max(min(y1, y2))是一定能够得到的，在这个途中∆x也被遍历忘了完了，严格的证明我不会。
+
+# 正确性证明
+1. 两边往中间走的双指针法，肯定担心是否遍历的过程中遗留掉最大值的情况。
+2. 马上能够想到的是通过递推或者分治缩小规模，但是前者不会缩短时间复杂度、后者分段前后没有明显的关系。
+3. 双指针的本质是在暴力搜索的基础上通过其中一个指针的运动，达到一次性剪枝一类情况的效果，因此把O(n^2) -> O(n)。
+4. 从场景上来看，当前value小的指针朝内运动的时候，其实是排除了一切可能把该value当作container的边的情况；
+
+https://leetcode-cn.com/problems/container-with-most-water/solution/on-shuang-zhi-zhen-jie-fa-li-jie-zheng-que-xing-tu/
